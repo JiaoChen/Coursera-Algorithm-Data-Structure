@@ -9,11 +9,10 @@ def gcd(a, b):
 	return gcd(smaller,remainder)
 
 def lcm(a, b):
-	return int(a * b / gcd(a,b))
+	return int(a * b // gcd(a,b))
 
 if __name__ == '__main__':
     #input = sys.stdin.read()
     a, b = map(int, input().split())
-    print int(231871064940156750/5)
     print lcm(a, b)
 
